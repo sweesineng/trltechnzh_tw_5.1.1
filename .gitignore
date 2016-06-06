@@ -5,3 +5,4 @@
 *.orig
 *vmlinux
 *build_kernel.sh
+*.gitignore

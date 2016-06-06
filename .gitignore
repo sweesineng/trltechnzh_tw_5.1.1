@@ -1,0 +1,7 @@
+*output
+*zImage
+*.log
+*.rej
+*.orig
+*vmlinux
+*build_kernel.sh

@@ -3424,6 +3424,7 @@ int xhci_queue_bulk_tx(struct xhci_hcd *xhci, gfp_t mem_flags,
 		num_trbs++;
 		running_total += TRB_MAX_BUFF_SIZE;
 	}
+	/* FIXME: this doesn't deal with URB_ZERO_PACKET - need one more */
 
 	max_packet = usb_endpoint_maxp(&urb->ep->desc);
 	if (!usb_urb_dir_in(urb) && urb->transfer_buffer_length &&
